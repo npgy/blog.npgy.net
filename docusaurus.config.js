@@ -60,7 +60,7 @@ const config = {
         title: 'NPGY\'s Blog',
         logo: {
           alt: 'NPGY\'s Blog Logo',
-          src: 'img/logo.svg',
+          src: 'img/npgy-icon.png',
         },
         items: [
           {
