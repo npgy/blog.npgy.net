@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const github = 'https://github.com/npgy/blog.npgy.net';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'NPGY\'s Blog',
@@ -27,29 +29,42 @@ const config = {
     locales: ['en'],
   },
 
-  presets: [
+  plugins: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+      '@docusaurus/plugin-content-pages',
+      {
+        path: 'src/pages',
+        routeBasePath: '/',
+        include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+        exclude: [
+          '**/_*.{js,jsx,ts,tsx,md,mdx}',
+          '**/_*/**',
+          '**/*.test.{js,jsx,ts,tsx}',
+          '**/__tests__/**',
+        ],
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        path: 'blog',
+        blogTitle: 'Nick Preston\'s Blog',
+      }
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        ignorePatterns: ['/tags/**'],
+        filename: 'sitemap.xml',
+      },
+    ],
+    [
+      '@docusaurus/theme-classic',
+      {
+        customCss: require.resolve('./src/css/custom.css'),
+      },
     ],
   ],
 
@@ -57,21 +72,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'NPGY\'s Blog',
+        title: 'Nick Preston',
         logo: {
-          alt: 'NPGY\'s Blog Logo',
+          alt: 'Nick Preston\'s Color Profile',
           src: 'img/npgy-icon.png',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/npgy/blog.npgy.net',
+            href: github,
             label: 'GitHub',
             position: 'right',
           },
@@ -90,7 +99,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Socials',
             items: [
               {
                 label: 'Discord',
@@ -111,7 +120,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: github,
               },
             ],
           },
