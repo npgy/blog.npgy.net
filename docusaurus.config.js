@@ -8,7 +8,7 @@ const github = 'https://github.com/npgy/blog.npgy.net';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'NPGY\'s Blog',
+  title: 'Nick Preston',
   tagline: 'Tech, music, spice.',
   url: 'https://blog.npgy.net',
   baseUrl: '/',
@@ -48,7 +48,7 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         path: 'blog',
-        blogTitle: 'Nick Preston\'s Blog',
+        blogTitle: 'Blog',
       }
     ],
     [
@@ -72,7 +72,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Nick Preston',
+        title: '',
         logo: {
           alt: 'Nick Preston\'s Color Profile',
           src: 'img/npgy-icon.png',
