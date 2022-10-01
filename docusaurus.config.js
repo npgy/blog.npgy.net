@@ -90,11 +90,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Music',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Polychora Records',
+                href: 'https://music.polychora.co',
               },
             ],
           },
