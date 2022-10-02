@@ -72,9 +72,10 @@ export default function HomepageFeatures() {
       <div className="container">
         <h2 className="text--center">I'm Currently Working On...</h2>
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {/* {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
-          ))}
+          ))} */}
+          <Feature Image={FeatureList[0].Image} title={FeatureList[0].title} description={FeatureList[0].description}/>
         </div>
       </div>
     </section>
