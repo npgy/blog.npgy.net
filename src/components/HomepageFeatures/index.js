@@ -100,8 +100,8 @@ export default function HomepageFeatures() {
               <ThemedImage className={styles.featureImg} role="img"
                 alt="Polychora Logo"
                 sources={{
-                  light: useBaseUrl('/img/polychora-lightmode.png'),
-                  dark: useBaseUrl('/img/polychora-darkmode.png'),
+                  light: useBaseUrl('/img/polychora-light.webp'),
+                  dark: useBaseUrl('/img/polychora-dark.webp'),
                 }}
               />
             </div>
@@ -121,8 +121,8 @@ export default function HomepageFeatures() {
             <ThemedImage className={styles.featureImg} role="img"
                 alt="Polychora Logo"
                 sources={{
-                  light: useBaseUrl('/img/chillsynth-light.png'),
-                  dark: useBaseUrl('/img/chillsynth-dark.png'),
+                  light: useBaseUrl('/img/chillsynth-light.webp'),
+                  dark: useBaseUrl('/img/chillsynth-dark.webp'),
                 }}
               />
             </div>
