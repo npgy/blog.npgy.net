@@ -36,7 +36,7 @@ const FeatureList = [
         I run it passionately, showing the world artists who don't
         have a big audience, helping them focus on making the music,
         and not worrying about the logistics of distribution and admin.
-        You can check it out <a href="https://music.polychora.co/">here.</a>
+        You can check it out <a target="_blank" href="https://music.polychora.co/">here.</a>
       </>
     ),
   },

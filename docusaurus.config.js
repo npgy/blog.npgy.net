@@ -135,6 +135,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      forceDarkMode: true,
     }),
 };
 
