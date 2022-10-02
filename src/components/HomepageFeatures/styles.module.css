@@ -5,7 +5,12 @@
   width: 100%;
 }
 
-.featureImg {
+.featureSvg {
   height: 200px;
+  width: 200px;
+}
+
+.featureImg {
+  height: auto;
   width: 200px;
 }

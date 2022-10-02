@@ -78,7 +78,13 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              <img className={styles.featureImg} role="img" src='@site/static/img/code.svg' />
+              <ThemedImage className={styles.featureSvg} role="img"
+                alt="Code Icon"
+                sources={{
+                  light: useBaseUrl('/img/code-light.svg'),
+                  dark: useBaseUrl('/img/code-dark.svg'),
+                }}
+              />
             </div>
             <div className="text--center padding-horiz--md">
               <h3>My Developer Career</h3>
@@ -112,7 +118,7 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              <img className={styles.featureImg} role="img" src='@site/static/img/logo.svg' />
+              <img className={styles.featureSvg} role="img" src='@site/static/img/logo.svg' />
             </div>
             <div className="text--center padding-horiz--md">
               <h3>extra</h3>
