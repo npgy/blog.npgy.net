@@ -19,7 +19,7 @@ const FeatureList = [
   },
   {
     title: 'Polychora Records',
-    Image: require('../../../static/img/polychora-darkmode.png'),
+    Image: require('../../../static/img/code.svg').default,
     //(
     // <ThemedImage
     //   alt="Polychora Logo"
