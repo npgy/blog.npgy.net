@@ -78,7 +78,7 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              {require('../../../static/img/code.svg').default.toString()}
+              <img className={styles.featureImg} role="img" src='@site/static/img/code.svg' />
             </div>
             <div className="text--center padding-horiz--md">
               <h3>My Developer Career</h3>
@@ -91,11 +91,11 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              <ThemedImage
+              <ThemedImage className={styles.featureImg} role="img"
                 alt="Polychora Logo"
                 sources={{
-                  light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
-                  dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
+                  light: useBaseUrl('/img/polychora-lightmode.png'),
+                  dark: useBaseUrl('/img/polychora-darkmode.png'),
                 }}
               />
             </div>
@@ -112,7 +112,7 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              {require('../../../static/img/logo.svg').default}
+              <img className={styles.featureImg} role="img" src='@site/static/img/logo.svg' />
             </div>
             <div className="text--center padding-horiz--md">
               <h3>extra</h3>
@@ -122,6 +122,6 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 }
