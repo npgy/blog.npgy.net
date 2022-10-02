@@ -19,15 +19,16 @@ const FeatureList = [
   },
   {
     title: 'Polychora Records',
-    Image: (
-    <ThemedImage
-      alt="Polychora Logo"
-      sources={{
-        light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
-        dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
-      }}
-    />
-    ),
+    Image: require('../../../static/img/polychora-darkmode.png'),
+    //(
+    // <ThemedImage
+    //   alt="Polychora Logo"
+    //   sources={{
+    //     light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
+    //     dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
+    //   }}
+    // />
+    // ),
     description: (
       <>
         Since 2016 I have been curating music and posting it online.
