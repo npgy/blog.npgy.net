@@ -5,21 +5,21 @@ import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
-  {
-    title: 'My Developer Career',
-    Image: require('../../../static/img/code.svg').default,
-    description: (
-      <>
-        Currently employed as a Software Developer, I work with the ancient and new
-        maintaining COBOL code on IBM mainframes, DB2 SQL, and C#. I am very interested
-        in Docker, Kubernetes, and efficient modern code that is easily deployable and
-        maintainable.
-      </>
-    ),
-  },
+  // {
+  //   title: 'My Developer Career',
+  //   Image: require('../../../static/img/code.svg').default,
+  //   description: (
+  //     <>
+  //       Currently employed as a Software Developer, I work with the ancient and new
+  //       maintaining COBOL code on IBM mainframes, DB2 SQL, and C#. I am very interested
+  //       in Docker, Kubernetes, and efficient modern code that is easily deployable and
+  //       maintainable.
+  //     </>
+  //   ),
+  // },
   {
     title: 'Polychora Records',
-    Image: require('../../../static/img/polychora-darkmode.png').default,
+    Image: (<img src='../../../static/img/polychora-darkmode.png' />),
     //(
     // <ThemedImage
     //   alt="Polychora Logo"
@@ -40,16 +40,16 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: 'extra',
-    Image: require('../../../static/img/logo.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  // {
+  //   title: 'extra',
+  //   Image: require('../../../static/img/logo.svg').default,
+  //   description: (
+  //     <>
+  //       Extend or customize your website layout by reusing React. Docusaurus can
+  //       be extended while reusing the same header and footer.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Image, title, description}) {
