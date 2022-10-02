@@ -3,6 +3,14 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useThemeContext from '@theme/hooks/useThemeContext';
+
+function PolychoraImg(props) {
+  const { isDarkTheme } = useThemeContext();
+  const darkImageSrc = '../../../static/img/polychora-darkmode.png';
+  const lightImageSrc = '../../../static/img/polychora-lightmode.png';
+  return <img src={isDarkTheme ? darkImageSrc : lightImageSrc} alt="Polychora Logo" />;
+}
 
 const FeatureList = [
   // {
@@ -19,16 +27,16 @@ const FeatureList = [
   // },
   {
     title: 'Polychora Records',
-    Image:
-    (
-    <ThemedImage
-      alt="Polychora Logo"
-      sources={{
-        light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
-        dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
-      }}
-    />
-    ),
+    Image: PolychoraImg(),
+    // (
+    // <ThemedImage
+    //   alt="Polychora Logo"
+    //   sources={{
+    //     light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
+    //     dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
+    //   }}
+    // />
+    // ),
     description: (
       <>
         Since 2016 I have been curating music and posting it online.
