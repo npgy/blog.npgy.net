@@ -78,7 +78,7 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              {require('../../../static/img/code.svg').default}
+              {require('../../../static/img/code.svg').default.toString()}
             </div>
             <div className="text--center padding-horiz--md">
               <h3>My Developer Career</h3>
