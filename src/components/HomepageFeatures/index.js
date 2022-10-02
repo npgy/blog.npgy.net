@@ -1,31 +1,47 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'My Developer Career',
+    Image: require('../../../static/img/code.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Currently employed as a Software Developer, I work with the ancient and new
+        maintaining COBOL code on IBM mainframes, DB2 SQL, and C#. I am very interested
+        in Docker, Kubernetes, and efficient modern code that is easily deployable and
+        maintainable.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Polychora Records',
+    Image: (
+    <ThemedImage
+      alt="Polychora Logo"
+      sources={{
+        light: useBaseUrl('../../../static/img/polychora-lightmode.png'),
+        dark: useBaseUrl('../../../static/img/polychora-darkmode.png'),
+      }}
+    />
+    ),
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Since 2016 I have been curating music and posting it online.
+        This ultimately ended up turning into a record label.
+        I run it passionately, showing the world artists who don't
+        have a big audience, helping them focus on making the music,
+        and not worrying about the logistics of distribution and admin.
+        You can check it out <a href="https://music.polychora.co/">here.</a>
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'extra',
+    Image: require('../../../static/img/logo.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -35,11 +51,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Image, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <Image className={styles.featureImg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -53,6 +69,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2>I'm Currently Working On..</h2>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
