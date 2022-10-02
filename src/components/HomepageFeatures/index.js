@@ -118,12 +118,20 @@ export default function HomepageFeatures() {
 
           <div className={clsx('col col--4')}>
             <div className="text--center">
-              <img className={styles.featureSvg} role="img" src='@site/static/img/logo.svg' />
+            <ThemedImage className={styles.featureImg} role="img"
+                alt="Polychora Logo"
+                sources={{
+                  light: useBaseUrl('/img/chillsynth-light.png'),
+                  dark: useBaseUrl('/img/chillsynth-dark.png'),
+                }}
+              />
             </div>
             <div className="text--center padding-horiz--md">
-              <h3>extra</h3>
-              <p>Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.</p>
+              <h3>ChillSynth</h3>
+              <p>Founded in 2018, ChillSynth is a community of retro inspired electronic instrumental musicians.
+                I run this community primarily on Discord where we host regular feedback streams and other events.
+                Come join us! <a target="_blank" href="https://discord.gg/chillsynth">https://discord.gg/chillsynth</a>
+              </p>
             </div>
           </div>
         </div>
