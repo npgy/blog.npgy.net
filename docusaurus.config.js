@@ -71,6 +71,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: '',
         logo: {
@@ -90,29 +95,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Music',
-            items: [
-              {
-                label: 'Polychora Records',
-                href: 'https://music.polychora.co',
-              },
-            ],
-          },
-          {
-            title: 'Socials',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/chillsynth',
-              },
-              {
-                label: 'Instagram',
-                href: 'https://github.com/npgy/blog.npgy.net',
-              },
-            ],
-          },
-          {
-            title: 'More',
+            title: 'Tech',
             items: [
               {
                 label: 'Blog',
@@ -121,6 +104,32 @@ const config = {
               {
                 label: 'GitHub',
                 href: github,
+              },
+            ],
+          },
+          {
+            title: 'Music',
+            items: [
+              {
+                label: 'My Label',
+                href: 'https://music.polychora.co',
+              },
+              {
+                label: 'My YouTube Channel',
+                href: 'https://www.youtube.com/Polychora',
+              },
+            ],
+          },
+          {
+            title: 'Spice',
+            items: [
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/chillsynth',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/napogy/',
               },
             ],
           },
