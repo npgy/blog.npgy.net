@@ -2,6 +2,7 @@
 title: How to Add Inspect Element Back to Discord
 authors: [npgy]
 tags: [tech, discord]
+hide_table_of_contents: true
 ---
 
 Discord recently updated their desktop client and you can no longer open the developer tools panel, more commonly known as inspect element. Here's a guide on how to get that functionality back.
