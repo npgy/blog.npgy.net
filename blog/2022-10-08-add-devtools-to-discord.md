@@ -18,7 +18,7 @@ On Linux, you can plug a folder location into your file explorer.
     - macOS: `~/Library/Application Support/discord`
     - Linux: `~/.config/discord`
 
-2. Edit the settings.json file in your preferred text editor.
+2. Inside the `discord` folder you just navigated to, there will be a file called `settings.json`. Edit that in your preferred text editor.
     - Add this line to the end of the file: `"DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true`  
 
 The whole file should look something like this once you've added that line:
