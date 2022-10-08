@@ -38,5 +38,12 @@ The whole file should look something like this once you've added that line:
 "DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true
 }
 ```
+  
+:::tip Opening the developer tools panel in Discord
+Windows/Linux: `Ctrl`+`Shift`+`I`
+macOS: `⌘`+`Option`+`I`
+:::
+
+Save the file and open Discord. Now you should be able to open the developer tools panel!
 
 Have fun editing your friend's messages in the Discord desktop client!
