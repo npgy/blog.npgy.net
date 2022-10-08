@@ -26,7 +26,7 @@ https://plex.tv/api/users/?X-Plex-Token=YOUR_TOKEN_HERE
 What you can do now is search through the resulting XML for the username you want to find the email for. `CTRL`+`F` is a handy shortcut to search through text in the browser.
 
 The XML should look something like this. You'll see their username, which you already know from the Plex dashboard. Right next to it you'll see `email=`. Right there will be their email address!
-```xml
+```xml-doc
 <User id="12345678" title="username123" username="username123" email="username123@gmail.com" other-attrs...">
 </User>
 ```
