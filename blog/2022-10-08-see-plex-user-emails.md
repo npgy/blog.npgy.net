@@ -4,10 +4,11 @@ authors: [npgy]
 tags: [tech, plex, media, api]
 ---
 
-## The Problem
 After a semi-recent Plex update, you may have noticed that you are no longer able to see the emails of the users to whom you've granted access to your libraries. Now it only shows the usernames of these users instead.
 
 If your situation is anything like mine, I was not able to tell who was who based on the usernames.
+
+<!--truncate-->
 
 ## The Solution
 First, you will need your Plex token.  
