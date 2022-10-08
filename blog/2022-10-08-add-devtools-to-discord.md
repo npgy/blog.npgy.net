@@ -40,7 +40,7 @@ The whole file should look something like this once you've added that line:
 ```
   
 :::tip Opening the developer tools panel in Discord
-Windows/Linux: `Ctrl`+`Shift`+`I`
+Windows/Linux: `Ctrl`+`Shift`+`I`  
 macOS: `⌘`+`Option`+`I`
 :::
 
