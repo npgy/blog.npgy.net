@@ -110,8 +110,8 @@ export default function HomepageFeatures() {
               <p>Since 2016 I have been curating music and posting it online.
                 This ultimately ended up turning into a record label.
                 I run it passionately, showing the world artists who don't
-                have a big audience, helping them focus on making the music,
-                and not worrying about the logistics of distribution and admin.
+                have a big audience. My goal is to help them focus on making the music
+                and not worry about the logistics of distribution and admin.
                 You can check it out <a target="_blank" href="https://music.polychora.co/">here.</a></p>
             </div>
           </div>

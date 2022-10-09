@@ -11,7 +11,7 @@ Discord recently updated their desktop client and you can no longer open the dev
 
 ## The Solution
 :::tip On Windows, a quick way to access folder locations is by using the `Win`+`R` keyboard shortcut and entering in the location.  
-On macOS, use the `⌘`+`Shift`+`G` shortcut.  
+On macOS, use the `⌘`+`Shift`+`G` shortcut from within Finder.  
 On Linux, you can plug a folder location into your file explorer.
 :::
 1. Close Discord, then navigate to its local user settings. This step differs depending on the operating system you use. Below are the directories you will need to access:
@@ -45,6 +45,6 @@ Windows/Linux: `Ctrl`+`Shift`+`I`
 macOS: `⌘`+`Option`+`I`
 :::
 
-Save the file and open Discord. Now you should be able to open the developer tools panel!
+Save the file and open Discord. Now you should be able to open the developer tools panel.
 
 Have fun editing your friend's messages in the Discord desktop client!
