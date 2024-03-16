@@ -60,8 +60,7 @@ Here are the general steps you need to take to set up your cloud box to proxy yo
 - Ideally, have the ability to spawn it as a background process. For example, by using `tmux`
 - Execute this command to connect to and expose the tunnel  
   `cloudflared access tcp --hostname mctunnel.np.gy --url 0.0.0.0:25565`
-- Then you'll need to open the same port **25565** in your cloud box's firewall  
-  In AWS, that process goes like this: [EC2 Firewall Settings](./how-to-cf-tunnels/ec2-firewall)
+- Then you'll need to open the same port **25565** in your cloud box's firewall
 - After all this, you should be able to connect to your server via your cloud box's public IP! You can create an A record so that you and your friends can connect via a nice domain, such as **mc.npgy.net** (this isn't a real server so don't get any ideas)
 
 ### Happy tunneling
