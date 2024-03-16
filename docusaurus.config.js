@@ -1,69 +1,69 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-const github = 'https://github.com/npgy/blog.npgy.net';
+const github = "https://github.com/npgy/blog.npgy.net";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Nick Preston',
-  tagline: 'Tech, music, spice.',
-  url: 'https://blog.npgy.net',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "Nick Preston",
+  tagline: "Tech, music, spice.",
+  url: "https://blog.npgy.net",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'npgy', // Usually your GitHub org/user name.
-  projectName: 'blog.npgy.net', // Usually your repo name.
+  organizationName: "npgy", // Usually your GitHub org/user name.
+  projectName: "blog.npgy.net", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   plugins: [
     [
-      '@docusaurus/plugin-content-pages',
+      "@docusaurus/plugin-content-pages",
       {
-        path: 'src/pages',
-        routeBasePath: '/',
-        include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+        path: "src/pages",
+        routeBasePath: "/",
+        include: ["**/*.{js,jsx,ts,tsx,md,mdx}"],
         exclude: [
-          '**/_*.{js,jsx,ts,tsx,md,mdx}',
-          '**/_*/**',
-          '**/*.test.{js,jsx,ts,tsx}',
-          '**/__tests__/**',
+          "**/_*.{js,jsx,ts,tsx,md,mdx}",
+          "**/_*/**",
+          "**/*.test.{js,jsx,ts,tsx}",
+          "**/__tests__/**",
         ],
       },
     ],
     [
-      '@docusaurus/plugin-content-blog',
+      "@docusaurus/plugin-content-blog",
       {
-        path: 'blog',
-        blogTitle: 'Blog',
-      }
-    ],
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        ignorePatterns: ['/tags/**'],
-        filename: 'sitemap.xml',
+        path: "blog",
+        blogTitle: "Blog",
       },
     ],
     [
-      '@docusaurus/theme-classic',
+      "@docusaurus/plugin-sitemap",
       {
-        customCss: require.resolve('./src/css/custom.css'),
+        changefreq: "weekly",
+        priority: 0.5,
+        ignorePatterns: ["/tags/**"],
+        filename: "sitemap.xml",
+      },
+    ],
+    [
+      "@docusaurus/theme-classic",
+      {
+        customCss: require.resolve("./src/css/custom.css"),
       },
     ],
   ],
@@ -72,64 +72,64 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: '',
+        title: "",
         logo: {
-          alt: 'Nick Preston\'s Color Profile',
-          src: 'img/npgy-icon.png',
+          alt: "Nick Preston's Color Profile",
+          src: "img/npgy-icon.png",
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: "/blog", label: "Blog", position: "left" },
           {
             href: github,
-            label: 'GitHub',
-            position: 'right',
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Tech',
+            title: "Tech",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
+                label: "GitHub",
                 href: github,
               },
             ],
           },
           {
-            title: 'Music',
+            title: "Music",
             items: [
               {
-                label: 'My Label',
-                href: 'https://music.polychora.co',
+                label: "My Label",
+                href: "https://music.polychora.co",
               },
               {
-                label: 'My YouTube Channel',
-                href: 'https://www.youtube.com/Polychora',
+                label: "My YouTube Channel",
+                href: "https://www.youtube.com/Polychora",
               },
             ],
           },
           {
-            title: 'Spice',
+            title: "Spice",
             items: [
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/chillsynth',
+                label: "Discord",
+                href: "https://and.fm/discord",
               },
               {
-                label: 'Instagram',
-                href: 'https://www.instagram.com/napogy/',
+                label: "Instagram",
+                href: "https://www.instagram.com/nmpgy/",
               },
             ],
           },
@@ -139,7 +139,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['xml-doc', 'json']
+        additionalLanguages: ["xml-doc", "json"],
       },
     }),
 };
